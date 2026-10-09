@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberSentinel SOC v5.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .glass { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    body { background-color: #0b0f19; color: #e2e8f0; font-family: sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <nav class="glass sticky top-0 z-50 px-6 py-4 flex justify-between items-center border-b border-slate-800">
+    <div class="flex items-center space-x-3">
+      <i class="fa-solid fa-shield-halved text-cyan-400 text-2xl animate-pulse"></i>
+      <span class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
+        CyberSentinel SOC v5.0
+      </span>
+      <span class="bg-emerald-500/20 text-emerald-400 text-xs px-2.5 py-1 rounded-full font-mono border border-emerald-500/30">
+        ● LIVE SYSTEM
+      </span>
+    </div>
+  </nav>
+
+  <main class="p-6 max-w-7xl mx-auto w-full flex-grow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <div class="glass p-4 rounded-xl">
+        <p class="text-xs text-slate-400 uppercase font-bold">Total Packets</p>
+        <h3 class="text-2xl font-bold text-white font-mono mt-1" id="packet-count">142,890</h3>
+      </div>
+      <div class="glass p-4 rounded-xl">
+        <p class="text-xs text-slate-400 uppercase font-bold">Intrusions Blocked</p>
+        <h3 class="text-2xl font-bold text-red-400 font-mono mt-1" id="threat-count">342</h3>
+      </div>
+      <div class="glass p-4 rounded-xl">
+        <p class="text-xs text-slate-400 uppercase font-bold">External Device</p>
+        <h3 class="text-2xl font-bold text-emerald-400 font-mono mt-1">Raspberry Pi 4</h3>
+      </div>
+    </div>
+
+    <div class="glass p-6 rounded-xl text-center">
+      <h2 class="text-xl font-bold text-cyan-400 mb-2">Cybersecurity SOC Dashboard Working!</h2>
+      <p class="text-slate-400 text-sm">Your Step 1 Code Setup is Successful!</p>
+    </div>
+  </main>
+
+  <footer class="glass border-t border-slate-800 p-4 text-center text-xs text-slate-500">
+    CyberSentinel Level 5 Live Project Submission
+  </footer>
+
+</body>
+</html>
